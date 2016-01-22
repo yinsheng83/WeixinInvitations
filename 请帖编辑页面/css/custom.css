@@ -1,0 +1,101 @@
+#MainContent {
+    background: #000000 url("images/bg.png") repeat scroll 0 0;
+    margin: 0 auto;
+    max-width: 320px;
+}
+
+.main-title-mr {
+    background: rgba(0, 0, 0, 0) url("images/maintitle_middle.png") repeat-y scroll center center / 100% 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.main-title-ml {
+    background: rgba(0, 0, 0, 0) url("images/maintitle_bottom.png") no-repeat scroll center bottom / 100% 78px;
+    width: 100%;
+    z-index: 100;
+}
+
+.button-mr {
+   background: rgba(0, 0, 0, 0) url("images/button_on.png") no-repeat scroll center center / 100% 94px;
+   height: 94px;
+   width: 100%;
+}
+
+.button-mr a {
+   color: #fff0bf;
+   display: block;
+   font-size: 20px;
+   font-weight: bold;
+   height: 94px;
+   line-height: 94px;
+   margin-left: 12px;
+   padding-top: 20px;
+   position: relative;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.main-title-mm {
+    background: rgba(0, 0, 0, 0) url("images/maintitle_top.png") no-repeat scroll center top / 100% 90px;
+    color: #5a3d1c;
+    line-height: 1.2;
+    min-height: 168px;
+    padding: 6px 50px 0;
+    text-align: center;
+    width: auto;
+    z-index: 100;
+}
+
+
+
+
+
+#maintitlehtml {
+    padding-bottom: 65px;
+    padding-top: 75px;
+}
+
+#frame {
+    position: relative;
+}
+
+#frame1_1 {
+    background: rgba(0,0,0,0) url("images/frame_top.png") no-repeat scroll center top / 100% 22px;
+    height: 121px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 101;
+}
+
+#frame2_1 {
+   height: 80%;
+   margin-top: 30px;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   z-index: 100;
+}
+
+#frame3_1 {
+   background: rgba(0,0,0,0) url("images/frame_bottom.png") no-repeat scroll center bottom / 100% 16px;
+   height: 100%;
+   position: absolute;
+   width: 100%;
+   z-index:102;
+}
+
+#subtitlehtml {
+   text-align: center;
+   color: #f5e794;
+   padding: 3px 20px;
+}
+
+#subtitleborder {
+   background: rgba(0,0,0,0) url("images/subtitle_bottom.png") no-repeat scroll center center / 100% 12px;
+   font-size: 15%;
+   height: 12px;
+   width: 100%;
+}
+

@@ -1,0 +1,39 @@
+<style>
+              #Gallery { list-style-type: none; margin: 0; padding: 0; width: 350px; }
+              #Gallery li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 100px; height: 110px; font-size: 8pt; text-align: center; cursor: move;}
+              #Gallery li span{ cursor: pointer; }
+				.thumb {
+					width: 100px;
+					height: 100px;
+					overflow: hidden;
+				}
+				.thumb .thumbimage  {
+					width:100%; height:100%; background-size:cover; background-position:center center;
+				}
+              </style>
+<script type="text/javascript" src="./lib/klass.min.js"></script>
+<script type="text/javascript" src="code.photoswipe-3.0.5.min.js"></script>
+<link rel="stylesheet" href="./css/jquery-ui-1.8.18.custom.full_leo2.css" type="text/css" media="screen" charset="utf-8">
+	<link href="styles.css" type="text/css" rel="stylesheet" />
+	<link href="photoswipe.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="./js/jquery-latest.js"></script>
+<script type="text/javascript" src="./js/jquery-ui-1.8.18.full.min.js"></script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function(){
+    var myPhotoSwipe = Code.PhotoSwipe.attach(
+    window.document.querySelectorAll('#Gallery a'),
+    {
+        enableMouseWheel: false,
+        enableKeyboard: false
+    });  
+    }, false);
+</script>
+<ul id="Gallery">  
+    <li><a href="images/full/001.jpg"><img src="images/thumb/001.jpg" alt="Image 01" /></a></li>  
+    <li><a href="images/full/002.jpg"><img src="images/thumb/002.jpg" alt="Image 02" /></a></li>  
+    <li><a href="images/full/003.jpg"><img src="images/thumb/003.jpg" alt="Image 03" /></a></li>  
+    <li><a href="images/full/004.jpg"><img src="images/thumb/004.jpg" alt="Image 04" /></a></li>  
+    <li><a href="images/full/005.jpg"><img src="images/thumb/005.jpg" alt="Image 05" /></a></li>  
+    <li><a href="images/full/006.jpg"><img src="images/thumb/006.jpg" alt="Image 06" /></a></li>  
+</ul>

@@ -1,0 +1,1028 @@
+	
+  body 
+  { 
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; 
+    font-size: 9pt;
+/***    
+    background-image:url('./images_we/left_menu_bg.png');
+    background-repeat:repeat;    
+***/    
+  }
+  select { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; }
+  input { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; }
+  td { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; }
+  textarea { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; }
+
+  .bold { font-weight: bold;}
+  .font_01 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #858585; font-size: 10pt; line-height:150%; }
+  .font_02 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #858585; font-size: 10pt; }
+  .font_03 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #11b1fb; font-size: 8pt; }
+  .font_04 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #ff4c81; font-size: 12pt;}
+  .font_05 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #FD729C; font-size: 10pt;}
+  .font_06 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #838383; font-size: 11pt; font-weight: bold;}
+  .font_07 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #FD729C; font-size: 12pt; font-weight: bold;}
+  
+  .font_08 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #ff5588; font-size: 18pt; font-weight: bold;}
+  .font_09 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #7a7a7a; font-size: 12pt; line-height:150%;}
+  
+  .font_10 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #7a7a7a; font-size: 11pt; line-height:150%;}     
+  .font_11 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #01b3d6; font-size: 14pt; font-weight: bold;}     
+  .font_12 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #90c31f; font-size: 14pt; font-weight: bold;}     
+  .font_13 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #f5a500; font-size: 14pt; font-weight: bold;}     
+  .font_14 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #8e3687; font-size: 14pt; font-weight: bold;}     
+  
+  .font_15 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #858585; font-size: 11pt; }
+  
+    
+  .font_20 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #ffffff; font-size: 12pt;}
+  .font_21 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #FE0000; font-size: 16pt; font-weight: bold;}
+  .font_22 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #F4AD49; font-size: 12pt; font-weight: bold;} 
+  .font_23 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #F03D5A; font-size: 12pt; font-weight: bold;} 
+  
+  .font_24 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #616161; font-size: 13pt; font-weight: bold; line-height:200%;} 
+  .font_25 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; color: #868686; font-size: 11pt; font-weight: bold; line-height:200%;} 
+   
+   
+.logo_text { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 32pt; color: #F03D5A;  font-weight: bold;}
+.logo_text2 { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 16pt; color: #302F2F;  font-weight: bold;}
+   
+
+.top_text { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 10pt; color: #D7D7D7;}
+.youvivid_text { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 8pt; color: #FFFFFF; font-weight: bold; }
+.mainmenu_text { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 14pt; color: #FFFFFF;  }
+
+  
+       
+.line
+{
+  width: 902px;
+  height: 40px;
+  background-image:url('./images_we/line.png');
+  background-repeat:repeat-x;
+} 
+
+.line2
+{
+  margin-top: -1px;
+  width: 902px;
+  height: 1px;
+  border-top: 1px solid #cdcdcd;
+} 
+
+.line_gray
+{
+  /***margin-top: -1px;***/
+  width: 800;
+  height: 5px;
+  border-bottom: 1px solid #cdcdcd;
+} 
+
+#home_banner
+{
+
+  background-image:url('./images_we/index_banner.png');
+  background-repeat:no-repeat;
+  background-position:center;   
+
+  
+}
+
+.div_img2 {
+  height: 160px;
+  width:100%; 
+  float: left; 
+  clear: left;
+  
+}
+.div_img2 img{
+  margin-right: 15px;
+  
+}
+
+.div_img {
+  height: 150px;
+  width:100%; 
+  float: left; 
+  clear: left;
+  font-weight: bold;
+  font-size: 11pt;
+  
+  
+}
+.div_img img{
+  margin-right: 8px;
+  
+}
+
+#head
+{
+
+  background-image:url('../images_we/head_bg.png');
+  background-repeat:repeat-x;  
+
+  
+}
+
+.logo
+{
+  
+  background-image:url('../images_we/logo_2.png');
+  background-repeat:no-repeat;
+
+} 
+.logo:hover
+{
+
+  background-image:url('../images_we/logo_2.png');
+  background-repeat:no-repeat;
+
+}
+
+.left_side
+{
+  
+} 
+
+.right_side
+{
+
+} 
+
+.bottom_side
+{
+
+} 
+
+
+.side
+{
+  background-image:url('../images_we/Header_repeat.png');
+  background-repeat:repeat-x;
+} 
+
+.pink
+{
+  background-image:url('../images_we/Website_xi_tie_12.png');
+  background-repeat:repeat-x;
+} 
+
+/***
+.banner
+{
+  background-image:url('./images_we/Website_xi_tie_v2_22.png');
+  background-repeat:repeat-x;
+} 
+***/
+
+	
+.banner { position: relative; overflow: auto; }
+.banner li { list-style: none; }
+.banner ul li { float: left; }
+        
+        
+.banner_bottom1
+{
+  background-image:url('../images_we/Website_xi_tie_v2_25.png');
+  background-repeat:repeat-x;
+} 
+
+.banner_bottom2
+{
+  background-image:url('./images_we/Website_xi_tie_v2_26.png');
+  background-repeat:repeat-x;
+} 
+
+.left_menu_bg
+{
+  background-image:url('./images_we/left_menu_bg.png');
+  background-repeat:repeat-y;
+  
+  
+} 
+
+.leftmenu_text { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 11pt; color: #858585;  }
+.leftmenu_text a#current2 {
+    /**border-color: #F60;**/
+    /**border-bottom: 1px solid #000;**/
+    color:#FD729C;
+    font-weight: bold;
+    font-size: 11pt; 
+  }
+.leftmenu_text_current { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 11pt; color: #FD729C; font-weight: bold; }
+.path_text { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 9pt; color: #858585; }
+.price_text { color: #FD729C; }
+
+.bar {
+    padding: 0 0 5px;
+    border-bottom: 1px solid #FD729C;
+    color: #FD729C;
+    width: 100%;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 12pt; color: #FD729C; font-weight: bold;
+  }
+
+.bar2 {
+    padding: 0 0 5px;
+    /**border-bottom: 1px solid #FF4C81;***/
+    color: #29CAC4;
+    width: 300px;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 12pt; color: #29CAC4; font-weight: bold;
+  }
+
+.bar3 {
+    padding: 0 0 5px;
+    /**border-bottom: 1px solid #FF4C81;***/
+    color: #FF4C81;
+    width: 300px;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 14pt; color: #FF4C81; font-weight: bold;
+  }
+
+.bar4 {
+    padding: 0 0 5px;
+    border-bottom: 1px solid #FF4C81;
+    color: #29CAC4;
+    width: 300px;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 12pt; color: #FF4C81; font-weight: bold;
+  }
+    
+  a.link_top:link {  text-decoration: none; color:#FFFFFF}
+  a.link_top:visited {  text-decoration: none; color:#FFFFFF}
+  a.link_top:active {  text-decoration: none; color:#FFFFFF}
+  a.link_top:hover {  text-decoration: underline; color:#D7D7D7}
+
+  a.link_leftmenu{font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 12pt; color: #FF4C81; font-weight: bold;}
+  a.link_leftmenu:link {  text-decoration: none; color:#858585}
+  a.link_leftmenu:visited {  text-decoration: none; color:#858585}
+  a.link_leftmenu:active {  text-decoration: none; color:#858585}
+  a.link_leftmenu:hover {  text-decoration: underline; color:#FF4C81}
+
+.link_01 { text-decoration: none; color:#00A3B6 }
+a.link_01:link { text-decoration: none; color:#00A3B6}
+a.link_01:visited { text-decoration: none; color:#00A3B6}
+a.link_01:active { text-decoration: none; color:#00A3B6}
+a.link_01:hover { text-decoration: underline; color:#00A3B6}
+  
+  a.link_02{font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 12pt; color: #f4ad49; font-weight: bold;}
+  a.link_02:link {  text-decoration: none; color:#f4ad49}
+  a.link_02:visited {  text-decoration: none; color:#f4ad49}
+  a.link_02:active {  text-decoration: none; color:#f4ad49}
+  a.link_02:hover {  text-decoration: underline; color:#f4940c}
+
+  a.link_03{font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 10pt; color: #000000; font-weight: bold;}
+  a.link_03:link {  text-decoration: none; color:#000000}
+  a.link_03:visited {  text-decoration: none; color:#000000}
+  a.link_03:active {  text-decoration: none; color:#000000}
+  a.link_03:hover {  text-decoration: underline; color:#ffffff}
+
+  .link_10 {font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 10pt;  color:#F03D5A; font-weight: bold;;  }
+  a.link_10:link { text-decoration: none; color:#F03D5A;}
+  a.link_10:visited { text-decoration: none; color:#F03D5A;}
+  a.link_10:active { text-decoration: none; color:#F03D5A;}
+  a.link_10:hover { text-decoration: underline; color:#F03D5A;}
+  
+/*** sub menu ***/
+
+
+  div#submenu {
+    margin-bottom: 10px;
+    float: left;
+    text-align: center;
+    /***border: 1px solid red;***/
+  }
+  
+  ul#subtabs {
+   
+    list-style: none;
+    margin: 0;
+    padding: 0px 0;
+    /**border-bottom: 1px solid #CCC;**/
+    /**font-weight: bold;**/
+    text-align: center;
+    white-space: nowrap
+
+  }
+  ul#subtabs li {
+    padding-right: 30px;
+    display: inline;
+    margin: 0 auto;
+    
+  }
+  ul#subtabs a {
+    
+
+    text-decoration: none;
+    padding: 0 0 7px 0px;
+    /***border-bottom: 1px solid #000;***/
+    font-family: 微軟正黑體; 
+    font-size: 12pt; 
+    color: #FFFFFF;
+  }
+  ul#subtabs a#current {
+    /**border-color: #F60;**/
+    border-bottom: 3px solid #F03D5A;
+    color:#FFFFFF;
+  }
+  ul#subtabs a:hover {
+    border-color: #9F9F9F;
+    border-bottom: 3px solid #9F9F9F;
+    color: #F03D5A;
+  }
+  
+/*** sub menu ***/  
+
+
+#newMenu {
+
+	width: 400px;
+	
+}
+
+#newMenu ul {
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+        
+#newMenu ul li {
+  
+  display: inline;
+  padding-right: 30px;
+  margin: 0;
+}
+        
+#newMenu ul li a {
+  
+  color: #FFF;
+  display: inline-block;
+  outline: none;
+  /***padding: 15px 13px;***/
+  padding: 0 0 7px 0px;
+  position: relative;
+  text-decoration: none;
+  font-family: 微軟正黑體; 
+  font-size: 12pt;   
+  border-bottom: 3px solid #9F9F9F;
+}
+
+#newMenu ul li a#current {
+    /**border-color: #F60;**/
+    border-bottom: 3px solid #F03D5A;
+    color:#FFFFFF;
+  }
+  
+#newMenu ul li a:hover {
+    border-color: #9F9F9F;
+    border-bottom: 3px solid #9F9F9F;
+    color: #F03D5A;
+}
+
+
+/*** div 中線 ***/
+
+.strike {
+    
+    
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.strike > div {
+  
+    height: 105px;
+    position: relative;
+    display: inline-block;
+    vertical-align:middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.strike > div:before,
+.strike > div:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 2048px;
+    height: 1px;
+    background: #f03d5a;
+}
+
+.strike > div:before {
+    right: 100%;
+    margin-right: 80px;
+}
+
+.strike > div:after {
+    left: 100%;
+    margin-left: 80px;
+}
+
+.strike_top_span { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 20pt; color: #626262; font-weight: bold; }
+.strike_bottom_span { font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 14pt; color: #f03d5a;  font-weight: bold;}
+
+
+/*** index ul li ***/
+
+  div#subclass {
+    
+    height: 70px;
+    padding-top: 20px;
+    margin-bottom: 8px;
+    float: center;
+    text-align: center;
+    /***border: 1px solid red;***/
+  }
+  
+  ul#subitem {
+   
+    list-style: none;
+    margin: 0;
+    padding: 0px 0;
+    /**border-bottom: 1px solid #CCC;**/
+    /**font-weight: bold;**/
+    text-align: center;
+    white-space: nowrap
+
+  }
+  ul#subitem li {
+    
+    /***border: 1px solid #CCC;***/
+    padding: 10px 80px 20px 80px;
+    text-align: center.
+    line-height: 57px; 
+    display: inline;
+    margin: 0 auto;
+    color: #9B9B9B;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 14pt;font-weight: bold; 
+    
+    
+        
+  }
+
+  ul#subitem li.current {
+    
+    color:#FFFFFF;
+    
+    background-image: url(../images_we/subitem_bg.png);
+    
+    background-repeat: no-repeat;
+    background-position: center center;     
+  }
+  
+  ul#subitem li.current a {
+
+    color:#FFFFFF;
+  }
+
+  ul#subitem li.current a:hover {
+
+    color:#FFFFFF;
+  }
+
+
+  ul#subitem a {
+    
+    color: #9B9B9B;
+    text-decoration: none;
+    
+    
+    
+  }
+
+  ul#subitem a.current {
+    
+
+  }
+  
+  ul#subitem a:hover {
+    color: #F03D5A;
+  }
+
+  #iphone {
+    
+    width: 750px;
+    height: 730px;
+    border: 3px solid #cccccc;
+    
+    text-align: center;
+
+  }
+
+  .iphone_center {
+    
+    /***display: inline-block;***/
+    float: left;
+    width: 355px;
+    height: 700px;
+    text-align: center;
+    vertical-align:top;
+    padding-top: 20px;
+  
+  
+  }
+  
+  .iphone_left {
+    float: left;
+    width: 190px;
+    height: 700px;
+    text-align: right;
+    vertical-align:middle;
+    padding-top: 300px;
+  
+  
+  }
+
+  .iphone_right {
+    float: left;
+    width: 190px;
+    height: 700px;
+    text-align: left;
+    vertical-align:middle;
+    padding-top: 300px;
+  
+  }
+  
+  #qr{
+    width: 500px;
+    height: 250px;
+    padding-top: 20px;
+  }
+  
+  #qr span{
+     
+     font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 10pt; font-weight: bold; 
+  }
+
+  #qrdiv1{
+     
+     width: 250px;
+     float: left; 
+    text-align: center;
+    vertical-align:middle;     
+  }
+  
+  #qrdiv2{
+     
+     width: 250px;
+     float: right; 
+    text-align: center;
+    vertical-align:middle;    
+    padding-top: 50px; 
+  }
+  
+ 
+  #iphone_switch{
+
+    display: inline-block;
+    width: 355px;
+    height: 80px;
+    text-align: center;
+    vertical-align:top;
+    padding-top: 10px;
+  
+  
+  }
+  
+  #iphone_ul{
+
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0px 0;
+    text-align: center;
+    white-space: nowrap    
+  float: center;
+  }
+  
+  #iphone_ul li{
+    
+    color: #9b9b9b;
+    font-size: 14pt;
+    display:inline;
+    padding: 10px 10px 10px 10px;
+  }  
+  
+  #iphone_ul a {
+    
+    color: #9B9B9B;
+    text-decoration: none;
+    
+    
+    
+  }  
+
+  ul#iphone_ul li.current {
+    
+    color:#F03D5A;
+
+  }
+  
+  ul#iphone_ul li.current a {
+
+    color:#F03D5A;
+  }
+
+  ul#iphone_ul li.current a:hover {
+
+    color:#F03D5A;
+  }
+
+
+  ul#iphone_ul a {
+    
+    color: #9B9B9B;
+    text-decoration: none;
+    
+    
+    
+  }
+
+  ul#iphone_ul a.current {
+    
+
+  }
+  
+  ul#iphone_ul a:hover {
+    color: #F03D5A;
+  }
+  
+/*** Q&A 常見問題 ***/
+
+  #faq_title{
+    
+  
+    height: 50px;
+    border-bottom: 1px solid #f03d5a;
+    color: #9B9B9B;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 16pt; font-weight: bold; 
+    text-align: left;
+    padding-bottom: 3px;
+    
+  }
+  
+  #faq_title span{
+    
+    
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 24pt; font-weight: bold; 
+  }  
+  
+  .faq_question{
+    
+    /***border: 1px solid #f03d5a;***/
+    height: 30px;
+    color: #f03d5a;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 14pt; font-weight: bold; 
+    text-align: left;
+    padding-top: 25px;
+    cursor: pointer;
+        
+  }  
+  
+  .faq_question span{
+    
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 18pt; font-weight: bold; 
+  }    
+
+  .faq_answer{
+    
+    /***border: 1px solid #f03d5a;***/
+    color: #828282;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 12pt; font-weight: bold; 
+	line-height: 1.6;
+    text-align: left;
+    padding-left: 50px;
+       
+  }  
+  
+/*** 使用說明 ***/
+
+  #howto_title{
+    
+  
+    height: 50px;
+    border-bottom: 1px solid #f03d5a;
+    color: #9B9B9B;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 16pt; font-weight: bold; 
+    text-align: left;
+    padding-bottom: 3px;
+    
+  }
+  
+  #howto_title span{
+    
+    
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 24pt; font-weight: bold; 
+  }  
+  
+  .howto_question{
+    
+    /***border: 1px solid #f03d5a;***/
+    height: 30px;
+    color: #f03d5a;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 14pt; font-weight: bold; 
+    text-align: left;
+    padding-top: 20px;
+    cursor: pointer;
+        
+  }  
+  
+  .howto_question span{
+    
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 18pt; font-weight: bold; 
+  }    
+
+  .howto_answer{
+    
+    /***border: 1px solid #f03d5a;***/
+    color: #828282;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 12pt; font-weight: bold; 
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 10px;   
+  }  
+  
+  .expalin_title{
+    
+  
+    height: 50px;
+    border-bottom: 1px solid #f03d5a;
+    color: #f03d5a;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 16pt; font-weight: bold; 
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    
+  }  
+
+  .create_title{
+      
+    height: 50px;
+    border-bottom: 1px solid #f03d5a;
+    color: #f03d5a;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 16pt; font-weight: bold; 
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    
+  }  
+  
+  .create_title_small{
+      
+    height: 30px;
+    border-bottom: 1px solid #f03d5a;
+    color: #f03d5a;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 16pt; font-weight: bold; 
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    
+  }  
+
+
+/*** inc_copyright ***/    
+
+
+
+#copyright
+{
+  
+  height: 113px;
+  background-image:url('../images_we/copyright_bg.png');
+  background-repeat:repeat-x;  
+
+  text-align: center;  
+   vertical-align:top;
+}
+
+#copyright_top
+{
+  
+  height: 45px;
+  text-align: center;  
+  vertical-align:middle;
+}
+
+#copyright_top table tr td
+{
+  line-height: 45px;
+  color: #7c7c7c;
+  font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 11pt; font-weight: bold; 
+  
+
+}
+
+#copyright_bottom
+{
+  
+  padding-top: 3px;
+  text-align: left;  
+  height: 68px;
+}
+
+#copyright_bottom table tr td
+{
+  line-height: 30px;
+  color: #cfcfcf;
+  font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 9pt; font-weight: bold; 
+  
+
+}
+
+  #copyright_top a:link { text-decoration: none; color:#7c7c7c}
+  #copyright_top a:visited { text-decoration: none; color:#7c7c7c}
+  #copyright_top a:active { text-decoration: none; color:#7c7c7c}
+  #copyright_top a:hover { text-decoration: underline; color:#f03d5a}
+
+  #copyright_bottom a:link { text-decoration: none; color:#cfcfcf}
+  #copyright_bottom a:visited { text-decoration: none; color:#cfcfcf}
+  #copyright_bottom a:active { text-decoration: none; color:#cfcfcf}
+  #copyright_bottom a:hover { text-decoration: underline; color:#f03d5a}
+
+
+.stuff {
+
+    width: 150px;
+    height: 230px;
+    position: absolute;
+    float: left;
+    opacity: 0.0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);        
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+    padding: 5px;
+    background-color:rgba(0,0,0,0.7);
+    
+}
+
+.hover{
+  width: 150px;
+  height: 230px;
+  float: left;  
+  
+}
+
+.stuff img{
+  
+  margin-top: 5px;
+}
+
+.stuff_txt
+{
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 16px;  
+  color: #f03d5a;
+  font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 8pt; font-weight: bold; 
+  
+
+}
+
+/***
+.hover:hover + .stuff {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);        
+}
+***/
+
+.stuff:hover{
+
+
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);    
+
+}
+
+.stuffhover{
+
+    
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);    
+}
+
+.select_label{
+  
+  line-height: 30px;
+  color: #717171;
+  font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 10pt; font-weight: bold; 
+    
+}
+
+/*** 製作頁 start ***/
+
+
+#head_edit
+{
+
+  background-image:url('../images_we/head_bg_edit.png');
+  background-repeat:repeat-x;  
+
+  
+}
+
+.logo_edit
+{
+  
+  background-image:url('../images_we/logo_edit.png');
+  background-repeat:no-repeat;
+
+} 
+
+  div#editmenu {
+  
+    height: 92px;
+    padding-top: 52px;
+    float: right;
+    text-align: right;
+    
+  }
+  
+  ul#edittabs {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0px 0;
+    /***border-bottom: 1px solid #CCC;***/
+    text-align: right;
+    white-space: nowrap
+    
+
+  }
+  ul#edittabs li {
+    
+
+    
+    padding-left: 90px;
+    padding-right: 30px;
+    display: inline;
+    margin: 0 auto;
+    height: 110px;
+    
+  }
+  
+  div#stepmenu {
+  
+    margin-top: -5px;
+    float: right;
+    text-align: right;
+    
+  }
+  
+  ul#steptabs {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0px 0;
+    /***border-bottom: 1px solid #CCC;***/
+    text-align: right;
+    white-space: nowrap
+    
+
+  }
+  ul#steptabs li {
+
+
+
+
+    padding-left: 116px;
+    padding-right: 50px;
+
+
+    display: inline;
+    margin: 0 auto;
+    color: #BDBDBD;
+    font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 14pt; font-weight: bold; 
+    
+  }
+
+
+
+/*** 製作頁 end ***/
+
+
+
+#inc_usermenu{
+  
+  border-radius: 10px;
+  width:96%;
+  height: 400px;
+  background-color:#eeeeee;
+  color: #f03d5a;
+  font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 12pt; font-weight: bold;
+
+}
+
+#inc_usermenu table tr td{
+  
+  color: #f03d5a;
+  font-family: "微软雅黑", "Microsoft YaHei", "微軟正黑體", "Microsoft JhengHei", verdana, tahoma, arial, serif; font-size: 12pt; font-weight: bold;
+
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="stylesheet" href="css/jquery-ui-1.8.18.custom.full_leo2.css" type="text/css" media="screen" charset="utf-8">
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.18.full.min.js"></script>
+<script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+
+	
+<script type="text/javascript">
+    $(function() {
+
+	       $( "#accordion_header" ).accordion({
+		          autoHeight: false, 
+		          collapsible: true
+	       });
+    
+
+         $( "#accordion_detail" ).accordion({
+		          autoHeight: false, 
+		          collapsible: false
+	       });
+    })
+   
+</script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+           <td width="41%"  valign="top">
+                <div id="scroller" >
+			                  <div  align="left" style=" padding-left:0px; padding-top:0px; background-image: url('images/iphone5_353x637.png'); width: 353px; height: 637px; background-repeat: no-repeat; position:relative" >                                              
+
+                                <!--[if lte IE 9]>
+                		<div style="position:absolute; top:52px; width:100%; text-align:center; color:#FBE486; z-index:999">
+                   		    <img src="images/icon-alert.png" width="12" height="12" align="absmiddle" />浏览器版本太旧不支持!请更换谷歌火狐或360浏览器
+                    	        </div>
+                		<div style="position:absolute; bottom:40px; width:100%; text-align:center; color:#FBE486; z-index:999">
+                   		    <img src="images/icon-alert.png" width="12" height="12" align="absmiddle" />浏览器版本太旧不支持!请更换谷歌火狐或360浏览器
+                    	        </div>
+                                <![endif]-->
+                                
+                                <!--<iframe  id="iframepage" name="iframepage" allowtransparency="true" scrolling="auto" style=" margin-top:77px; margin-left:8px; height: 495px; width: 337px;  position: absolute" src="srccode.html"  frameborder="0" marginwidth="0"  ></iframe>-->
+                                
+                        </div>              
+                        <br>
+	              </div>
+           </td>
+           <td width="59%" align="left" valign="top">
+               <div id="accordion_header">               	
+                	<h3 id="header" ><a href="#">&nbsp;&nbsp;主页设置</a></h3>
+                  <div class="section-content1">
+                      <table width="100%" border="0" cellpadding="2" cellspacing="1">
+                             <tr>
+                                  <td align="right" valign="top" width="120"><b>选择模板:</b></td>
+                                  <td colspan="2" valign="top">
+                                        <select id="invite_style" >
+                    
+                                              <option value="http://youvivid-assets.youvivid.net/css/common2.css|http://youvivid-assets.youvivid.net/css/dianna_royalred/images/icons/|http://youvivid-assets.youvivid.net/css/dianna_royalred/custom4.css|0|109" selected="selected">皇家邀约(红色)</option>
+              
+                    
+                                              <option value="http://youvivid-assets.youvivid.net/css/common2.css|http://youvivid-assets.youvivid.net/css/mini/images/icons/|http://youvivid-assets.youvivid.net/css/mini/custom.css|1|26">桃红典雅</option>
+                                         </select>
+                     
+                                  </td>
+                             </tr>
+                             <tr>
+                             	    <td align="right" vallign="top" width="120">字    体:</td>
+                             	    <td colspan="2" valign="top">
+                             	    	  <select id="font_style">
+                             	    	  	     <option value="Microsoft JhengHei,Microsoft YaHei,arial||0|0" >手机预设字体</option>
+                             	    	  	     <option value="粗钢笔2,微软雅黑,宋体,Microsoft JhengHei,Microsoft YaHei,arial|http://42.121.32.43:443/Fonts/getcss?family=%E7%B2%97%E9%92%A2%E7%AC%942&font=%E7%B2%97%E9%92%A2%E7%AC%94|1|1" selected="selected">粗钢笔</option>
+                             	    	  </select>
+                             	    </td>
+                             </tr>
+                             <tr>
+                             	    <td align="right" vallign="top" width="120">音    乐:</td>
+                             	    <td colspan="2" valign="top">
+                             	    	  <select id="mp3url">
+                             	    	  	     <option value="" >无音乐</option>
+                             	    	  	     <option value="audios_system/m1206064fcf0242da28e.mp3">花与梦</option>
+                             	    	  </select>
+                             	    </td>
+                             </tr>
+                             <tr>
+                             	    <td align="right" valign="top">主标题:</td>
+                                  <td colspan="2" valign="top">
+                                      <textarea name="invite_maintitle" id="invite_maintitle" cols="30" rows="2">{&#26032;&#37070;}&#19982;{&#26032;&#23064;}&#23130;&#23476;&#36992;&#32422;</textarea> 
+                                      <img id="maintitlehtmlbold" src="./images/bold.gif" border="0" style="cursor:pointer;" onclick="doBold('maintitlehtml');" align="top">
+                                      <img id="maintitlehtmlitalic" src="./images/italic.gif" border="0" style="cursor:pointer;" onclick="doItalic('maintitlehtml');" align="top"> 
+                                      <img id="maintitlehtmlunderline" src="./images/underline.gif" border="0" style="cursor:pointer;" onclick="doUnderline('maintitlehtml');" align="top">
+              		                    <select id="selSize1" name="selSize1" onChange="doFontSize('maintitlehtml', this.options[this.selectedIndex].value)" style="vertical-align:top">
+              		                        <option value="8">8</option>
+              		                        <option value="9">9</option>
+              		                    </select>
+              		                </td>      		  
+                             </tr>
+                             <tr>
+                             	    <td  width="55" align="right" valign="top">主  图:</td>
+                                  <td width="100" valign="top">
+                                  	   <img src="http://youvividcnupload1.oss.aliyuncs.com/images/2013/7/f1302065111bb40c28cc.jpg" width="100" align="top" id="invite_webimg"/>
+                                  </td>
+                                   <td width="367" valign="top">
+                    	                  <input id="select_image" name="select_image" type="button" value="选择图片" /><br>
+                                        <input id="cut_image" name="cut_image" type="button" value="裁减图片" />	  
+                                   </td> 
+                             </tr>
+                             <tr>
+                             	    <td align="right" valign="top">副标题:</td>
+                                  <td colspan="2" valign="top">
+                                      <textarea name="invite_subtitle" id="invite_subtitle" cols="30" rows="2">{&#23476;&#23458;&#26085;&#26399;}</textarea> 
+                                      <img id="subtitlehtmlbold" src="./images/bold.gif" border="0" style="cursor:pointer;" onclick="doBold('maintitlehtml');" align="top">
+                                      <img id="subtitlehtmlitalic" src="./images/italic.gif" border="0" style="cursor:pointer;" onclick="doItalic('maintitlehtml');" align="top"> 
+                                      <img id="subtitlehtmlunderline" src="./images/underline.gif" border="0" style="cursor:pointer;" onclick="doUnderline('maintitlehtml');" align="top">
+              		                    <select id="selSize1" name="selSize1" onChange="doFontSize('maintitlehtml', this.options[this.selectedIndex].value)" style="vertical-align:top">
+              		                        <option value="8">8</option>
+              		                        <option value="9">9</option>
+              		                    </select>
+              		                </td>      		  
+                             </tr>
+                      </table>                                   
+                  </div>
+               </div>
+               <div id="accordion_detail">
+	                <h3><a href="#">&nbsp;&nbsp;子页编辑 <span style=" color:#BBB">(点击子页签打开后开始编辑,不需要的可打勾隐藏)</span></a></h3>
+                  <div class="section-content">
+                  	   <div class="ui-widget" >
+                  	       <div id="tabs">
+                  	       	   <ul>
+                  	       	      <li><a id="invite_detail_title287261" href="#invite_detail_content287261">
+                                  </a>爱的邀约</li>
+                                  <li><a id="invite_detail_title287262" href="#invite_detail_content287262">
+                                  </a>婚纱相册</li> 
+                  	           </ul> 
+                  	           <div id="invite_detail_content287261">
+                  	           	   <textarea id="invite_detail_editor287261" name="invite_detail_editor287261">
+                  	           	   	   <p style="text-align: center;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">那一年，我们偶然相遇<br />                                                              
+                  	           	   	   没想到世界这么大<br />                                                                                                                                                                                                                                      
+                                       两颗小小的心从此被系在一起<br />                                                                                                                                                                                                                     
+                  	           	   	   我们看到彼此的好<br />                                                                                                                                                                                                                               
+                  	           	   	   也看到彼此对自己的重要<br />                                                                                                                                                                                                                         
+                  	           	   	   在这个美丽的日子<br />                                                                                                                                                                                                                               
+                  	           	   	   我们决定让幸福延续<br />                                                                                                                                                                                                                             
+                  	           	   	   期望快乐回忆里<br />                                                                                                                                                                                                                                 
+                  	           	   	   有您的祝福与参与</span></span></p>                                                                                                                                                                                                                   
+                  	           	                                                                                                                                                                                                                                                        
+                  	           	       <p style="text-align: right;">&nbsp;</p>                                                                                                                                                                                                             
+                  	           	                                                                                                                                                                                                                                                        
+                  	           	       <p style="text-align: right;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">{新郎}与{新娘}敬邀</span></span></p>                                                
+                  	           	                                                                                                                                                                                                                                                        
+                  	           	       <p>&nbsp;</p>                                                                                                                                                                                                                                        
+                  	           	                                                                                                                                                                                                                                                        
+                  	           	       <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">                                                                                                                                                                              
+                  	           	       	<tbody>                                                                                                                                                                                                                                             
+                  	           	       		<tr>                                                                                                                                                                                                                                              
+                  	           	       			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">日期：</span></span></td>
+                  	           	       			<td style="text-align: left; vertical-align: top;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">{宴客日期}</span></span></td>                             
+                  	           	       		</tr>                                                                                                                                                                                                                                             
+                  	           	       		<tr>                                                                                                                                                                                                                                              
+                  	           	       			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">时间：</span></span></td>
+                  	           	       			<td style="text-align: left; vertical-align: top;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">{宴客时间}</span></span></td>                             
+                  	           	       		</tr>                                                                                                                                                                                                                                             
+                  	           	       		<tr>                                                                                                                                                                                                                                              
+                  	           	       			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">地点：</span></span></td>
+                  	           	       			<td style="text-align: left; vertical-align: top;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">{场所名称}</span></span></td>                             
+                  	           	       		</tr>                                                                                                                                                                                                                                             
+                  	           	       		<tr>                                                                                                                                                                                                                                              
+                  	           	       			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">地址：</span></span></td>
+                  	           	       			<td style="text-align: left; vertical-align: top;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">{场所地址}</span></span></td>                             
+                  	           	       		</tr>                                                                                                                                                                                                                                             
+                  	           	       		<tr>                                                                                                                                                                                                                                              
+                  	           	       			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">电话：</span></span></td>
+                  	           	       			<td style="text-align: left; vertical-align: top;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;"><span style="font-size: 18px;">{联络电话}</span></span></td>                             
+                  	           	       		</tr>                                                                                                                                                                                                                                             
+                  	           	       		<tr>                                                                                                                                                                                                                                              
+                  	           	       			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;">&nbsp;</td>                                                                                                                                                 
+                  	           	       			<td style="text-align: left; vertical-align: top;">&nbsp;</td>                                                                                                                                                                                  
+                  	           	       		</tr>                                                                                                                                                                                                                                             
+                  	           	       	</tbody>                                                                                                                                                                                                                                            
+                  	           	       </table>                                                                                                                                                                                                                                   
+                  	           	   
+                  	           	   </textarea>
+                  	           	   <script type="text/javascript">
+                  	           	   	   CKEDITOR.on( 'instanceReady', function(e)
+                                       {
+                                       	   e.editor.addCommand( 'reloadWebFont',
+                                       	      {
+                                       	      	  exec : function( edr )
+					                                        {
+					                                        	  htmltext2 =	edr.getData();
+					                                        	  alert(htmltext2);
+					                                        }  
+                                       	      });
+                                            
+                                          e.editor.on( 'saveSnapshot', function(ev) { 
+					                                   delay(function(){
+						                                      ev.editor.execCommand( 'reloadWebFont');
+					                                   },200);
+				                                  });
+				                               }); 
+								                                
+                  	           	   	   CKEDITOR.replace( 'invite_detail_editor287261');
+                  	           	   	   /*
+                  	           	   	   {
+                  	           	   	   	
+                  	           	   	   	   //templates_files : [ CKEDITOR.getUrl( 'plugins/templates/templates/default.js.asp' )],
+				                               toolbar :
+				                               [					                   
+				                                   { name: 'reloadWebFont', items : ['reloadWebFont'] },              
+					                                 { name: 'font face', items : [ 'Font','FontSize' ] },
+					                                 { name: 'font type', items : [ 'Bold','Italic','TextColor','BGColor' ] },
+					                                 { name: 'paragraph', items : [ 'JustifyLeft','JustifyCenter','JustifyRight' ] },
+					                                 { name: 'links', items : [ 'Link','Unlink'] }
+				                               ],
+                  	           	   	   font_names : "粗鋼筆/粗鋼筆1,粗鋼筆10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;隸書/隸書1,隸書10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;古印體/古印體1,古印體10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;粗廣告體/粗廣告體1,粗廣告體10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;粗黑體/粗黑體1,粗黑體10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;黑體/黑體1,黑體10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;簽字筆體/簽字筆體1,簽字筆體10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;粗行楷/粗行楷1,粗行楷10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;甜妞體/甜妞體1,甜妞體10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;粗仿宋/粗仿宋1,粗仿宋10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;顏楷/顏楷1,顏楷10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;勘亭流/勘亭流1,勘亭流10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;俏黑體/俏黑體1,俏黑體10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;超明/超明1,超明10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;中圓體/中圓體1,中圓體10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;粗圓體/粗圓體1,粗圓體10,微軟正黑體,Microsoft JhengHei,Microsoft YaHei,arial;"                    	           	   	                     	           	   	                                          
+                  	           	   	   });*/
+			                                				             	           	   	
+                  	           	   </script>
+                  	           </div>
+                  	           <div id="invite_detail_content287262">
+                  	           	
+                  	           	    <style>
+                                       #sortable2270340 { list-style-type: none; margin: 0; padding: 0; width: 350px; }
+                                       #sortable2270340 li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 100px; height: 110px; font-size: 8pt; text-align: center; cursor: move;}
+                                       #sortable2270340 li span{ cursor: pointer; }
+				                               .thumb {
+					                                width: 100px;
+					                                height: 100px;
+					                                overflow: hidden;
+				                               }
+				                               .thumb .thumbimage  {
+					                                width:100%; height:100%; background-size:cover; background-position:center center;
+				                               }
+                  	                 </style>      	             
+                                     <ul id="sortable2270340" name="sortable2270340">
+<!--<li id="40240" class="ui-state-default" fileurl="uploads/image/f0904273C82W2683.jpg"  style="text-align: right"><span><img src="./images/close_button.png"></span><BR><img src="uploads/image/f0904273C82W2683.jpg" width="100" height="90"></li>-->
+
+                                         <li id="6609072" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f150421553650de9172f.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553650de9172f.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553650de9172f.jpg" width="1" height="1" ></li>
+
+                                         <li id="6608954" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364f645c0b2.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364f645c0b2.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364f645c0b2.jpg" width="1" height="1" ></li>
+
+                                         <li id="6609106" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f1504215536519a86014.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e1504215536519a86014.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e1504215536519a86014.jpg" width="1" height="1" ></li>
+
+                                         <li id="6609091" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f150421553651365c0b1.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553651365c0b1.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553651365c0b1.jpg" width="1" height="1" ></li>
+
+                                         <li id="6608897" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364d9135e58.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364d9135e58.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364d9135e58.jpg" width="1" height="1" ></li>
+
+                                         <li id="6608843" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364b8bbb692.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364b8bbb692.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364b8bbb692.jpg" width="1" height="1" ></li>
+
+                                     </ul>
+                                     	         	           	  
+                  	           </div>
+                  	       </div>
+                  	        <script type="text/javascript">
+                                 $(document).ready(function () {
+                                      
+                                 $("#tabs").tabs();     
+                                 
+                                 $("#tabs").bind('tabsselect', function(event, ui) {
+                                 	
+                                 	  var invite_detail_id = ui.tab.id.substr(19, ui.tab.id.length - 19 );
+                                 	  console.log(invite_detail_id);
+                                 
+                                 });                            
+                           
+		                           });
+		
+                            </script>
+                  	   </div>
+                  </div>
+               </div>
+           </td>
+       </tr>
+</table>              
+                

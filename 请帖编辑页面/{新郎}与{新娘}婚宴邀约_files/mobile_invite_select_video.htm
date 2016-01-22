@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>YouVivid乐拍秀 - 的个人空间</title>
+<link href="mobile_invite_select_video_data/movcard.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="%7B%E6%96%B0%E9%83%8E%7D%E4%B8%8E%7B%E6%96%B0%E5%A8%98%7D%E5%A9%9A%E5%AE%B4%E9%82%80%E7%BA%A6_files/jquery-latest.js"></script>
+
+
+<script type="text/javascript">
+
+
+	function  confirmSelectVideo(xusrdata,xobjurl,xblogimgurl,xpreviewid, xpreviewname ){
+    //function getSharemode( previewid, sharemode){
+		
+		x=confirm("此则MV目前设置不开放,无法作为请帖视频!\n是否使用此则MV作为请帖视频,并更改MV设置为私有作品？")
+		if (x)
+		{
+           var D = new Date();
+            var ss = parseInt( D.getTime() / 1000); 
+                       
+            var url = 'preview_sharemode_xml.asp?previewid=' + xpreviewid + '&sharemode=2&ss=' + ss;
+        
+            if( window.XMLHttpRequest){
+    
+                xmlhttp = new XMLHttpRequest();
+                xmlhttp.open( 'GET', url, false);
+                xmlhttp.send( null);
+                //setSharemode();
+                
+            }
+            
+            else if( window.ActiveXObject){
+    
+                xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+                xmlhttp.open( 'GET', url, false);
+                //xmlhttp.onreadystatechange = setSharemode;
+                xmlhttp.send();
+            }
+			selectVideo(xusrdata,xobjurl,xblogimgurl,xpreviewid);
+		}
+		else
+		{
+			
+		}
+       
+ 
+
+    }
+
+    function setSharemode(){
+
+       //  alert('影片更換完成');
+
+    }
+
+
+function selectVideo(xusrdata,xobjurl,xblogimgurl,xpreviewid ){
+
+	var ts = new Date().getTime();
+	//alert(xblogimgurl + '?' + ts);
+	self.parent.$('#iframepage').get(0).contentWindow.xusrdata974140=xusrdata;
+	self.parent.$('#iframepage').get(0).contentWindow.xobjurl974140=xobjurl; 
+	//self.parent.$('#iframepage').contents().find('img#xblogimgurl974140').attr('src', xblogimgurl + '?' + ts);
+	//.css('background-image','url('+bgImage+')')
+	self.parent.$('#iframepage').contents().find('#xblogimgurl974140').css('background-image','url('+xblogimgurl + '?' + ts+')');
+	$('#invite_detail_previewid974140',window.parent.document).val(xpreviewid);
+	
+	self.parent.$('#iframepage').contents().find("#youkuvideo974140").hide();
+	self.parent.$('#iframepage').contents().find("#youtubevideo974140").hide();
+	self.parent.$('#iframepage').contents().find("#flashvideo974140").show();
+	$('#invite_detail_byouku974140',window.parent.document).val('0');
+	
+	
+	return false;
+}
+</script>
+
+</head>
+
+<body>
+
+
+				<span style="color:#03F">你尚未制作MV，可以点击[制作新MV]前往制作。或选择以下范例MV看看效果</span><br>
+				
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <form action="/mobile_invite_select_video.asp?invite_detail_id=974140" method="post" name="jumppage1"></form>
+                      <tbody><tr>
+                      
+                        <td width="35%"> <!--<input type="button" onClick="location.reload(true);" value="重新载入">--> 我的MV(3) </td>
+                        <td align="right" valign="middle" width="65%">
+						   <table id="jumpmenu" border="0" cellpadding="0" cellspacing="0" width="100%">
+							 <tbody><tr>
+							   <td align="right" width="94%">页数:
+								   
+                                    <select name="page" size="1" onchange="javascript: document.jumppage1.submit();">
+                                    
+                                          <option value="1" selected="selected">1</option>
+                                    
+                                    </select>
+								   
+							   </td>
+							 </tr>
+						   </tbody></table>
+						</td>
+                      </tr>
+                      
+                    </tbody></table>
+                       
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                         
+                         <tbody><tr>
+                           
+                           <td align="center" valign="top" width="33.3333333333333%">
+
+                                <table style="margin:5px 0px 3px 0px;" border="0" cellpadding="0" cellspacing="0" width="126">
+                                <!--
+                                        <tr>
+                                          <td height=15 align="center" valign="bottom" class="mvblock_featured"  >
+                                            
+                                            &nbsp;
+                                            
+                                          </td>
+                                        </tr>
+                                -->
+                                
+                                
+                                        <tbody><tr>
+                                            <td class="mvblock_image" style="cursor:pointer" id="" onclick="javascript:self.parent.switchSrc_variable4('swf/1405.swf', 'web/getuserdata_embed.asp?embedid=Q9G7W');return false;" onmouseover="this.className='mvblock_image_hover'" onmouseout="this.className='mvblock_image'" align="center" height="126" background="mobile_invite_select_video_data/a1.png" valign="middle" width="126">
+                                              <div style="width:120px;height:120px; background: center center url(http://youvividcnupload1.oss.aliyuncs.com/cimage/c225036-01DF869BC7854588BA630FBB9EFDC6BAQ9G7W.jpg); background-size: cover; position:relative" align="right"><img src="mobile_invite_select_video_data/playbtn2.png" title="" style=" position:absolute; bottom:0px; right:0px;" height="50" border="0" width="50"></div>
+                     						<!--<img width="120" src="http://youvividcnupload1.oss.aliyuncs.com/cimage/b225036-01DF869BC7854588BA630FBB9EFDC6BAQ9G7W.jpg" TITLE="" border="0" >-->                           
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mvblock_text" valign="top">
+                                            <div style="width:126px" class="wordwrap" align="center">
+                                              <a href="#" onclick="javascript:self.parent.switchSrc_variable4('swf/1405.swf', 'web/getuserdata_embed.asp?embedid=Q9G7W');return false;" title="粉红甜心-喜帖范例" class="objtitle">粉红甜心-喜帖范例</a> <br>
+                                                <input name="SelectVideo" id="SelectVideo" onclick="javascript:selectVideo('web/getuserdata_embed.asp?embedid=Q9G7W','swf/1405.swf','http://youvividcnupload1.oss.aliyuncs.com/cimage/c225036-01DF869BC7854588BA630FBB9EFDC6BAQ9G7W.jpg',225036 );" value="选取此MV" type="button">
+                                                
+                                            </div>
+                                          </td>
+                                        </tr>
+                                </tbody></table>
+                                
+                        
+                        
+                        
+                           </td>
+                           
+                           <td align="center" valign="top" width="33.3333333333333%">
+
+                                <table style="margin:5px 0px 3px 0px;" border="0" cellpadding="0" cellspacing="0" width="126">
+                                <!--
+                                        <tr>
+                                          <td height=15 align="center" valign="bottom" class="mvblock_featured"  >
+                                            
+                                            &nbsp;
+                                            
+                                          </td>
+                                        </tr>
+                                -->
+                                
+                                
+                                        <tbody><tr>
+                                            <td class="mvblock_image" style="cursor:pointer" id="" onclick="javascript:self.parent.switchSrc_variable4('swf/992_8.swf', 'web/getuserdata_embed.asp?embedid=X8G3A');return false;" onmouseover="this.className='mvblock_image_hover'" onmouseout="this.className='mvblock_image'" align="center" height="126" background="mobile_invite_select_video_data/a1.png" valign="middle" width="126">
+                                              <div style="width:120px;height:120px; background: center center url(http://youvividcnupload1.oss.aliyuncs.com/cimage/c225272-E339CEE5C5F7ECB6617FC069CFAF9A43X8G3A.jpg); background-size: cover; position:relative" align="right"><img src="mobile_invite_select_video_data/playbtn2.png" title="" style=" position:absolute; bottom:0px; right:0px;" height="50" border="0" width="50"></div>
+                     						<!--<img width="120" src="http://youvividcnupload1.oss.aliyuncs.com/cimage/b225272-E339CEE5C5F7ECB6617FC069CFAF9A43X8G3A.jpg" TITLE="" border="0" >-->                           
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mvblock_text" valign="top">
+                                            <div style="width:126px" class="wordwrap" align="center">
+                                              <a href="#" onclick="javascript:self.parent.switchSrc_variable4('swf/992_8.swf', 'web/getuserdata_embed.asp?embedid=X8G3A');return false;" title="婚礼喜讯-喜帖范例" class="objtitle">婚礼喜讯-喜帖范例</a> <br>
+                                                <input name="SelectVideo" id="SelectVideo" onclick="javascript:selectVideo('web/getuserdata_embed.asp?embedid=X8G3A','swf/992_8.swf','http://youvividcnupload1.oss.aliyuncs.com/cimage/c225272-E339CEE5C5F7ECB6617FC069CFAF9A43X8G3A.jpg',225272 );" value="选取此MV" type="button">
+                                                
+                                            </div>
+                                          </td>
+                                        </tr>
+                                </tbody></table>
+                                
+                        
+                        
+                        
+                           </td>
+                           
+                           <td align="center" valign="top" width="33.3333333333333%">
+
+                                <table style="margin:5px 0px 3px 0px;" border="0" cellpadding="0" cellspacing="0" width="126">
+                                <!--
+                                        <tr>
+                                          <td height=15 align="center" valign="bottom" class="mvblock_featured"  >
+                                            
+                                            &nbsp;
+                                            
+                                          </td>
+                                        </tr>
+                                -->
+                                
+                                
+                                        <tbody><tr>
+                                            <td class="mvblock_image" style="cursor:pointer" id="" onclick="javascript:self.parent.switchSrc_variable4('swf/1735_13.swf', 'web/getuserdata_embed.asp?embedid=FBJUU');return false;" onmouseover="this.className='mvblock_image_hover'" onmouseout="this.className='mvblock_image'" align="center" height="126" background="mobile_invite_select_video_data/a1.png" valign="middle" width="126">
+                                              <div style="width:120px;height:120px; background: center center url(http://youvividcnupload1.oss.aliyuncs.com/cimage/c283802-5FD20EA3FE44F0C4623F4EC7568E0218FBJUU.jpg); background-size: cover; position:relative" align="right"><img src="mobile_invite_select_video_data/playbtn2.png" title="" style=" position:absolute; bottom:0px; right:0px;" height="50" border="0" width="50"></div>
+                     						<!--<img width="120" src="http://youvividcnupload1.oss.aliyuncs.com/cimage/b283802-5FD20EA3FE44F0C4623F4EC7568E0218FBJUU.jpg" TITLE="" border="0" >-->                           
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mvblock_text" valign="top">
+                                            <div style="width:126px" class="wordwrap" align="center">
+                                              <a href="#" onclick="javascript:self.parent.switchSrc_variable4('swf/1735_13.swf', 'web/getuserdata_embed.asp?embedid=FBJUU');return false;" title="一起跳舞吧-喜帖范例" class="objtitle">一起跳舞吧-喜帖范例</a> <br>
+                                                <input name="SelectVideo" id="SelectVideo" onclick="javascript:selectVideo('web/getuserdata_embed.asp?embedid=FBJUU','swf/1735_13.swf','http://youvividcnupload1.oss.aliyuncs.com/cimage/c283802-5FD20EA3FE44F0C4623F4EC7568E0218FBJUU.jpg',283802 );" value="选取此MV" type="button">
+                                                
+                                            </div>
+                                          </td>
+                                        </tr>
+                                </tbody></table>
+                                
+                        
+                        
+                        
+                           </td>
+                           
+                         </tr>
+                         
+                         <tr>
+                           
+                           <td align="center" valign="top" width="33.3333333333333%">
+
+                                <table style="margin:5px 0px 3px 0px;" border="0" cellpadding="0" cellspacing="0" width="126">
+                                <!--
+                                        <tr>
+                                          <td height=15 align="center" valign="bottom" class="mvblock_featured"  >
+                                            
+                                            &nbsp;
+                                            
+                                          </td>
+                                        </tr>
+                                -->
+                                
+                                
+                                        <tbody><tr>
+                                            <td class="mvblock_image" style="cursor:pointer" id="" onclick="javascript:self.parent.switchSrc_variable4('swf/929_13.swf', 'web/getuserdata_embed.asp?embedid=6AQEU');return false;" onmouseover="this.className='mvblock_image_hover'" onmouseout="this.className='mvblock_image'" align="center" height="126" background="mobile_invite_select_video_data/a1.png" valign="middle" width="126">
+                                              <div style="width:120px;height:120px; background: center center url(http://youvividcnupload1.oss.aliyuncs.com/cimage/c314970-B77A87D76C10DEFB2FD863AB46ECCB976AQEU.jpg); background-size: cover; position:relative" align="right"><img src="mobile_invite_select_video_data/playbtn2.png" title="" style=" position:absolute; bottom:0px; right:0px;" height="50" border="0" width="50"></div>
+                     						<!--<img width="120" src="http://youvividcnupload1.oss.aliyuncs.com/cimage/b314970-B77A87D76C10DEFB2FD863AB46ECCB976AQEU.jpg" TITLE="" border="0" >-->                           
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mvblock_text" valign="top">
+                                            <div style="width:126px" class="wordwrap" align="center">
+                                              <a href="#" onclick="javascript:self.parent.switchSrc_variable4('swf/929_13.swf', 'web/getuserdata_embed.asp?embedid=6AQEU');return false;" title="满月酒MV范例" class="objtitle">满月酒MV范例</a> <br>
+                                                <input name="SelectVideo" id="SelectVideo" onclick="javascript:selectVideo('web/getuserdata_embed.asp?embedid=6AQEU','swf/929_13.swf','http://youvividcnupload1.oss.aliyuncs.com/cimage/c314970-B77A87D76C10DEFB2FD863AB46ECCB976AQEU.jpg',314970 );" value="选取此MV" type="button">
+                                                
+                                            </div>
+                                          </td>
+                                        </tr>
+                                </tbody></table>
+                                
+                        
+                        
+                        
+                           </td>
+                           
+                           <td align="center" valign="top" width="33.3333333333333%">
+
+                                <table style="margin:5px 0px 3px 0px;" border="0" cellpadding="0" cellspacing="0" width="126">
+                                <!--
+                                        <tr>
+                                          <td height=15 align="center" valign="bottom" class="mvblock_featured"  >
+                                            
+                                            &nbsp;
+                                            
+                                          </td>
+                                        </tr>
+                                -->
+                                
+                                
+                                        <tbody><tr>
+                                            <td class="mvblock_image" style="cursor:pointer" id="" onclick="javascript:self.parent.switchSrc_variable4('swf/323_5.swf', 'web/getuserdata_embed.asp?embedid=EA8DM');return false;" onmouseover="this.className='mvblock_image_hover'" onmouseout="this.className='mvblock_image'" align="center" height="126" background="mobile_invite_select_video_data/a1.png" valign="middle" width="126">
+                                              <div style="width:120px;height:120px; background: center center url(http://youvividcnupload1.oss.aliyuncs.com/cimage/c314979-3040AADCAC2544E444614AF1561E37BAEA8DM.jpg); background-size: cover; position:relative" align="right"><img src="mobile_invite_select_video_data/playbtn2.png" title="" style=" position:absolute; bottom:0px; right:0px;" height="50" border="0" width="50"></div>
+                     						<!--<img width="120" src="http://youvividcnupload1.oss.aliyuncs.com/cimage/b314979-3040AADCAC2544E444614AF1561E37BAEA8DM.jpg" TITLE="" border="0" >-->                           
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mvblock_text" valign="top">
+                                            <div style="width:126px" class="wordwrap" align="center">
+                                              <a href="#" onclick="javascript:self.parent.switchSrc_variable4('swf/323_5.swf', 'web/getuserdata_embed.asp?embedid=EA8DM');return false;" title="百日宴MV范例" class="objtitle">百日宴MV范例</a> <br>
+                                                <input name="SelectVideo" id="SelectVideo" onclick="javascript:selectVideo('web/getuserdata_embed.asp?embedid=EA8DM','swf/323_5.swf','http://youvividcnupload1.oss.aliyuncs.com/cimage/c314979-3040AADCAC2544E444614AF1561E37BAEA8DM.jpg',314979 );" value="选取此MV" type="button">
+                                                
+                                            </div>
+                                          </td>
+                                        </tr>
+                                </tbody></table>
+                                
+                        
+                        
+                        
+                           </td>
+                           
+                           <td align="center" valign="top" width="33.3333333333333%">
+
+                                <table style="margin:5px 0px 3px 0px;" border="0" cellpadding="0" cellspacing="0" width="126">
+                                <!--
+                                        <tr>
+                                          <td height=15 align="center" valign="bottom" class="mvblock_featured"  >
+                                            
+                                            &nbsp;
+                                            
+                                          </td>
+                                        </tr>
+                                -->
+                                
+                                
+                                        <tbody><tr>
+                                            <td class="mvblock_image" style="cursor:pointer" id="" onclick="javascript:self.parent.switchSrc_variable4('swf/1264.swf', 'web/getuserdata_embed.asp?embedid=GAWDZ');return false;" onmouseover="this.className='mvblock_image_hover'" onmouseout="this.className='mvblock_image'" align="center" height="126" background="mobile_invite_select_video_data/a1.png" valign="middle" width="126">
+                                              <div style="width:120px;height:120px; background: center center url(http://youvividcnupload1.oss.aliyuncs.com/cimage/c315103-9CCB2DD5D21098934E87B310B119F45AGAWDZ.jpg); background-size: cover; position:relative" align="right"><img src="mobile_invite_select_video_data/playbtn2.png" title="" style=" position:absolute; bottom:0px; right:0px;" height="50" border="0" width="50"></div>
+                     						<!--<img width="120" src="http://youvividcnupload1.oss.aliyuncs.com/cimage/b315103-9CCB2DD5D21098934E87B310B119F45AGAWDZ.jpg" TITLE="" border="0" >-->                           
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="mvblock_text" valign="top">
+                                            <div style="width:126px" class="wordwrap" align="center">
+                                              <a href="#" onclick="javascript:self.parent.switchSrc_variable4('swf/1264.swf', 'web/getuserdata_embed.asp?embedid=GAWDZ');return false;" title="周岁生日MV范例" class="objtitle">周岁生日MV范例</a> <br>
+                                                <input name="SelectVideo" id="SelectVideo" onclick="javascript:selectVideo('web/getuserdata_embed.asp?embedid=GAWDZ','swf/1264.swf','http://youvividcnupload1.oss.aliyuncs.com/cimage/c315103-9CCB2DD5D21098934E87B310B119F45AGAWDZ.jpg',315103 );" value="选取此MV" type="button">
+                                                
+                                            </div>
+                                          </td>
+                                        </tr>
+                                </tbody></table>
+                                
+                        
+                        
+                        
+                           </td>
+                           
+                         </tr>
+                         
+                       </tbody></table>
+                       <br>
+                    <form action="/mobile_invite_select_video.asp?invite_detail_id=974140" method="post" name="jumppage2">
+                      
+                      
+                        
+                        
+						   <table id="jumpmenu" border="0" cellpadding="0" cellspacing="0" width="100%">
+							 <tbody><tr>
+							   <td align="right" width="94%">页数:
+								   
+                                    <select name="page" size="1" onchange="javascript: document.jumppage2.submit();">
+                                    
+                                          <option value="1" selected="selected">1</option>
+                                    
+                                    </select>
+								   
+							   </td>
+							 </tr>
+						   </tbody></table>
+						
+                      
+                      </form>
+                    
+                       	
+
+
+
+
+</body></html>

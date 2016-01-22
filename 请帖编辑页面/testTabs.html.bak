@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI 标签页（Tabs） - 默认功能</title>
+  <link rel="stylesheet" href="css/jquery-ui-1.8.18.custom.full_leo2.css" type="text/css" media="screen" charset="utf-8">
+  <script type="text/javascript" src="js/jquery-latest.js"></script>
+  <script type="text/javascript" src="js/jquery-ui-1.8.18.full.min.js"></script>
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+<body>
+ 
+                        <div id="tabs">
+                  	       	   <ul>
+                  	       	      <li><a id="invite_detail_title287261" href="#invite_detail_content287261" style="cursor:w-resize;">
+                                  </a>爱的邀约</li>
+                                  <li><a id="invite_detail_title287262" href="#invite_detail_content287262" style="cursor:w-resize;">
+                                  </a>婚纱相册</li> 
+                  	           </ul> 
+                  	           <div id="invite_detail_content287261">
+
+                  	           </div>
+                  	           <div id="invite_detail_content287262">
+                  	           	             
+                                      <ul id="sortable287262" name="sortable287262">
+                                      	    <!--<li id="40240" class="ui-state-default" fileurl="uploads/image/f0904273C82W2683.jpg"  style="text-align: right"><span><img src="./images/close_button.png"></span><BR><img src="uploads/image/f0904273C82W2683.jpg" width="100" height="90"></li>-->
+
+
+                                      </ul>
+                                     	         	           	  
+                  	           </div>
+                  	       </div>
+                  	         
+ 
+</body>
+</html>

@@ -1,0 +1,126 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/xhtml-mobile12.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312" />
+<link class="customcss" type="text/css" rel="stylesheet" href="css/custom.css">
+<script src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.18.full.min.js"></script>
+<script type="text/javascript"> 
+
+         $(document).ready(function() {
+	
+		$("#accordion").accordion({ autoHeight: false },{ collapsible: true,active: false } );
+
+         }); 
+
+     </script> 
+</head>
+<body>
+<div id="MainContent">
+<div class="main-title-mr">
+  <div class="main-title-ml">
+     <div class="main-title-mm">
+        <div id="maintitlehtml">
+           <span style="text-decoration: none; font-style: normal; font-size: 24px; font-weight: normal;">
+Hank与Carol
+<br>
+婚宴邀约
+</span>
+        </div>     
+     </div>
+  </div>
+</div>
+<div id="frame">
+     <div id="frame1_1">
+     </div>
+     <div id="frame3_1">
+     </div>
+     <div class="inner-main-mm">
+          <img id="invite_webimg" width="100%" src="photos/f1302065111bb40c28cc.jpg">
+     </div>
+</div>
+<div id="subtitlehtml">
+    <span style="font-weight: normal; font-size: 18px; ">{宴客日期}</span>
+</div>
+<div id="subtitleborder">
+</div>
+<div id="accordion">
+    <h3 style="display:" id="invite_title1" >
+        <div class="button-mr">
+        <a href="javaScript:void(0);"><img class="iconimage" src="http://youvividassets.youvivid.net/css/bean_green/images/icons/1.png"  border="0" align="absmiddle">&nbsp;<span id="invite_detail_name2270339" class="button-title">爱 的 邀 约</span>&nbsp;</a>
+        </div>
+    </h3>
+    <div id="invite_content1">
+        <p style="text-align: center;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;">那一年，我们相遇<br />
+世界这么大<br />
+上天注定我们走在一起<br />
+经历了初识的浪漫<br />
+一起走过风雨<br />
+失去了过后才知道珍惜<br />
+我们看到彼此的好<br />
+也看到彼此对自己的重要</span></p>
+
+<p style="text-align: center;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;">我的生命中不能没有你<br />
+在这个美丽的日子<br />
+我们决定让幸福延续<br />
+期望快乐的回忆里，有您的参与</span></p>
+
+<p>&nbsp;</p>
+
+<p style="text-align: right;"><span style="font-size: 16px;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;">尹盛&amp;曹锐怡敬邀</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
+	<tbody>
+		<tr>
+			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;"><span style="font-size: 16px;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;">日期：</span></span></td>
+			<td style="text-align: left; vertical-align: top;"><span style="font-size: 16px;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;">2015年5月2日</span></span></td>
+		</tr>
+		<tr>
+			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;"><span style="font-size: 16px;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;">时间：</span></span></td>
+			<td style="text-align: left; vertical-align: top;"><span style="font-size: 16px;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;">10点18分</span></span></td>
+		</tr>
+		<tr>
+			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;"><span style="font-size: 16px;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;">地点：</span></span></td>
+			<td style="text-align: left; vertical-align: top;"><span style="font-size: 16px;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;">奥雅婚礼园</span></span></td>
+		</tr>
+		<tr>
+			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;"><span style="font-size: 16px;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;">地址：</span></span></td>
+			<td style="text-align: left; vertical-align: top;"><span style="font-family: 粗钢笔1,粗钢笔10,微软雅黑,宋体,microsoft jhenghei,microsoft yahei,arial;">北京市朝阳区天辰东路2号</span></td>
+		</tr>
+		<tr>
+			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;">&nbsp;</td>
+			<td style="text-align: left; vertical-align: top;">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width: 5%; text-align: right; vertical-align: top; white-space: nowrap;">&nbsp;</td>
+			<td style="text-align: left; vertical-align: top;">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<h3>
+        <div class="button-mr">
+    	<a href="javaScript:void(0);"><img class="iconimage" alt="7.png" src="http://youvividassets.youvivid.net/css/bean_green/images/icons/7.png"  border="0" align="absmiddle">&nbsp;<span id="invite_detail_name2270340" class="button-title">婚 纱 相 册</span>&nbsp;</a>
+        </div>
+</h3> 
+<div id="t1">
+        <p>Description 3</p> 
+</div>
+<h3>
+        <div class="button-mr">
+    	<a href="javaScript:void(0);"><img class="iconimage" alt="7.png" src="http://youvividassets.youvivid.net/css/bean_green/images/icons/7.png"  border="0" align="absmiddle">&nbsp;<span id="invite_detail_name2270340" class="button-title">婚 宴 地 图</span>&nbsp;</a>
+        </div>
+</h3> 
+<div id="t1">
+        <p>Description 3</p> 
+</div>
+
+</div>
+</div>
+</body>
+</html>
