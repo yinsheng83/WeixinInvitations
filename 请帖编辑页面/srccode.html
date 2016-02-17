@@ -8,6 +8,12 @@
 <link class="customcss" type="text/css" rel="stylesheet" href="css/custom.css">
 <script src="js/jquery-latest.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.18.full.min.js"></script>
+
+<link href="styles.css" type="text/css" rel="stylesheet" />
+<link href="photoswipe.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="./lib/klass.min.js"></script>
+<script type="text/javascript" src="code.photoswipe.jquery-3.0.5.min.js"></script>
+
 <script type="text/javascript"> 
 
        $(document).ready(function() {
@@ -110,7 +116,204 @@ Hank”ÎCarol
     	<a href="javaScript:void(0);"><img class="iconimage" alt="7.png" src="http://youvividassets.youvivid.net/css/bean_green/images/icons/7.png"  border="0" align="absmiddle">&nbsp;<span id="invite_detail_name2270340" class="button-title">ªÈ …¥ œ‡ ≤·</span>&nbsp;</a>
         </div>
 </h3> 
-<div id="t1">
+<div class="accordion" id="invite_detail_content2270340" >
+	      <div name="detail7" id="detail7" class="detail">        
+            <div class="detail-tr">
+           	   <div class="detail-tl">
+           	   	  <div class="detail-tm">
+           	   	  </div>
+           	   </div>
+            </div>
+        
+            <div class="detail-mr">
+           <div class="detail-ml">
+             <div class="detail-mm">
+		            <!--<div id="slideshow" style="width:300px; height:300px;"></div>-->
+                <span id="nopicture2270340"></span>                                
+	
+	              <ul id="Gallery2270340" class="gallery">
+		
+		
+<!--<li><a href="uploads/image/f0904273C82W2683.jpg" rel="external"><img src="uploads/image/f0904273C82W2683.jpg" alt="" /></a></li>-->
+
+
+                
+
+
+                
+
+
+                
+
+
+                
+
+
+                
+
+
+                
+
+
+	
+	         <li>
+	         	   <a href="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f150421553650de9172f.jpg">
+	         	   <div class="thumb" id="6609072" style="min-height: 80px; background-image: url(&quot;http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553650de9172f.jpg&quot;);"><img src="images/spacer.gif" width="100%"></div></a>
+	         </li>
+	         <li>
+	         	   <a href="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364f645c0b2.jpg">
+	         	   <div class="thumb" id="6608954" style="min-height: 80px; background-image: url(&quot;http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364f645c0b2.jpg&quot;);"><img src="images/spacer.gif" width="100%"></div></a>
+	         </li>
+	         <li>
+	         	   <a href="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f1504215536519a86014.jpg">
+	         	   <div class="thumb" id="6609106" style="min-height: 80px; background-image: url(&quot;http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e1504215536519a86014.jpg&quot;);"><img src="images/spacer.gif" width="100%"></div></a>
+	         </li>
+	         <li>
+	         	   <a href="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f150421553651365c0b1.jpg">
+	         	   <div class="thumb" id="6609091" style="min-height: 80px; background-image: url(&quot;http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553651365c0b1.jpg&quot;);"><img src="images/spacer.gif" width="100%"></div></a>
+	         </li>
+	         <li>
+	         	   <a href="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364d9135e58.jpg">
+	         	   <div class="thumb" id="6608897" style="min-height: 80px; background-image: url(&quot;http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364d9135e58.jpg&quot;);"><img src="images/spacer.gif" width="100%"></div></a>
+	         </li>
+	         <li>
+	         	   <a href="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364b8bbb692.jpg">
+	         	   <div class="thumb" id="6608843" style="min-height: 80px; background-image: url(&quot;http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364b8bbb692.jpg&quot;);"><img src="images/spacer.gif" width="100%"></div></a>
+	         </li>
+	              </ul>
+
+                <script type="text/javascript">
+
+		//var cw = $('.gallery li').width() * 0.666 ; // there is no li exist on initial
+/*
+		$(document).ready(function() {
+		
+				var cw = $('.gallery').width() * 0.33333 ; // 0.222 = 0.3333*0.6666
+				alert("ready: cw="+cw + ", gallery width=" + $('.gallery').width());
+				$('.gallery li a .thumb').css({
+					'height': cw + 'px'
+				});
+		});
+	
+		$(window).resize(function() {
+			var cw = $('.gallery').width() * 0.33333 ; // 0.222 = 0.3333*0.6666
+				alert("resize: cw="+cw + ", gallery width=" + $('.gallery').width());
+			$('.gallery li a .thumb').css({
+				'height': cw + 'px'
+			});
+		});
+*/	
+                </script>
+
+                <script type="text/javascript">
+
+    var options, instance2270340;
+
+	// Set up PhotoSwipe with all anchor tags in the Gallery container 
+
+
+		(function(window, $, PhotoSwipe){
+			
+			$(document).ready(function(){
+				
+				options = {target:$("#PhotoSwipeTarget",parent.document.body) , allowUserZoom: false, 
+					captionAndToolbarAutoHideDelay: 0, captionAndToolbarShowEmptyCaptions:false, autoStartSlideshow: true
+				  //  ,preventHide: true
+				};
+				if ($('#Gallery2270340 li').size() > 0){
+					instance2270340 =  $("#Gallery2270340 a").photoSwipe(options);
+    					// onBeforeShow
+					instance2270340.addEventHandler(PhotoSwipe.EventTypes.onBeforeShow, function(e){
+						
+						//alert('onbeforeshow');
+						instanceClose = this;
+						parent.showDialog(); 
+				
+			
+					});
+
+					// onSlideshowStop
+					instance2270340.addEventHandler( window.Code.PhotoSwipe.EventTypes.onBeforeHide, function(e){
+					//alert('onBeforeHide');
+					parent.closeDialog(); 
+					});     					
+				}
+			});
+			
+			
+		}(window, window.jQuery, window.Code.PhotoSwipe));
+
+
+
+
+
+
+		function addPhotoSwipe2270340(fileid, thumbnailurl, fileurl, photocount){
+
+
+                        
+            var li = $('<li/>').append( $('<a/>').attr('href', fileurl)
+              .append($('<div class="thumb" />').attr('id', fileid).css('background-image', 'url('+thumbnailurl+')').css('min-height', '80px').append($('<img />').attr('src', 'images/spacer.gif').attr('width', '100%')
+              ))).appendTo('ul#Gallery2270340');
+
+
+            if ($("#Gallery2270340 li").size() == photocount){
+	
+       				
+					options = {target:$("#PhotoSwipeTarget",parent.document.body) , allowUserZoom: false 
+						,captionAndToolbarAutoHideDelay: 0, captionAndToolbarShowEmptyCaptions:false
+					  //  ,preventHide: true
+					};
+					
+					instance2270340 =  $("#Gallery2270340 a").photoSwipe(options);
+								   
+					// onBeforeShow
+					instance2270340.addEventHandler( window.Code.PhotoSwipe.EventTypes.onBeforeShow, function(e){
+						
+						//alert('onbeforeshow');
+						instanceClose = this;
+						parent.showDialog(); 
+
+					});                
+					
+					// onSlideshowStop
+					instance2270340.addEventHandler( window.Code.PhotoSwipe.EventTypes.onBeforeHide, function(e){
+						//alert('onBeforeHide');
+						parent.closeDialog(); 
+					});                  
+        					
+            }
+    }		 
+    
+    function instance_hide(){
+        //alert('hide');
+        
+        instanceClose.hide(0);
+        //window.Code.PhotoSwipe.activeInstances[0].instance.hide(0);
+          
+
+        
+        
+        
+      
+    }
+				
+                </script>
+
+                <div style="width:100%; height:3px"></div>
+                <div id="PS" style=" overflow: hidden; position: relative;"></div>
+
+	           </div>
+           </div>
+            </div>
+        
+            <div class="detail-br">
+        	    <div class="detail-bl">
+        	 	    <div class="detail-bm">
+        	 	    </div>
+        	    </div>
+            </div>
+        </div>
         <p>Description 3</p> 
 </div>
 <h3>

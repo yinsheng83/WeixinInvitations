@@ -8,13 +8,21 @@
 <link class="customcss" type="text/css" rel="stylesheet" href="css/custom.css">
 <script src="js/jquery-latest.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.8.18.full.min.js"></script>
+
+<link href="styles.css" type="text/css" rel="stylesheet" />
+<link href="photoswipe.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="./lib/klass.min.js"></script>
+<script type="text/javascript" src="code.photoswipe.jquery-3.0.5.min.js"></script>
+
 <script type="text/javascript"> 
 
-         $(document).ready(function() {
+       $(document).ready(function() {
 	
-		$("#accordion").accordion({ autoHeight: false },{ collapsible: true,active: false } );
+		        $("#accordion").accordion(
+		           {autoHeight: false },
+		        	 {collapsible: true,active: false });
 
-         }); 
+       }); 
 
      </script> 
 </head>
@@ -108,7 +116,7 @@ Hank”ÎCarol
     	<a href="javaScript:void(0);"><img class="iconimage" alt="7.png" src="http://youvividassets.youvivid.net/css/bean_green/images/icons/7.png"  border="0" align="absmiddle">&nbsp;<span id="invite_detail_name2270340" class="button-title">ªÈ …¥ œ‡ ≤·</span>&nbsp;</a>
         </div>
 </h3> 
-<div id="t1">
+<div class="accordion" id="invite_detail_content2270340" >
         <p>Description 3</p> 
 </div>
 <h3>

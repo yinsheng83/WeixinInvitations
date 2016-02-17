@@ -40,7 +40,7 @@
                     	        </div>
                                 <![endif]-->
                                 
-                                <!--<iframe  id="iframepage" name="iframepage" allowtransparency="true" scrolling="auto" style=" margin-top:77px; margin-left:8px; height: 495px; width: 337px;  position: absolute" src="srccode.html"  frameborder="0" marginwidth="0"  ></iframe>-->
+                                <iframe  id="iframepage" name="iframepage" allowtransparency="true" scrolling="auto" style=" margin-top:77px; margin-left:8px; height: 495px; width: 337px;  position: absolute" src="srccode.html"  frameborder="0" marginwidth="0"  ></iframe>
                                 
                         </div>              
                         <br>
@@ -232,22 +232,22 @@
 					                                width:100%; height:100%; background-size:cover; background-position:center center;
 				                               }
                   	                 </style>      	             
-                                       <ul id="sortable2270340" name="sortable2270340">
+                                     <ul id="sortable2270340" name="sortable2270340">
 <!--<li id="40240" class="ui-state-default" fileurl="uploads/image/f0904273C82W2683.jpg"  style="text-align: right"><span><img src="./images/close_button.png"></span><BR><img src="uploads/image/f0904273C82W2683.jpg" width="100" height="90"></li>-->
 
-                <li id="6609072" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f150421553650de9172f.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553650de9172f.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553650de9172f.jpg" width="1" height="1" ></li>
+                                         <li id="6609072" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f150421553650de9172f.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553650de9172f.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553650de9172f.jpg" width="1" height="1" ></li>
 
-                <li id="6608954" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364f645c0b2.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364f645c0b2.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364f645c0b2.jpg" width="1" height="1" ></li>
+                                         <li id="6608954" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364f645c0b2.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364f645c0b2.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364f645c0b2.jpg" width="1" height="1" ></li>
 
-                <li id="6609106" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f1504215536519a86014.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e1504215536519a86014.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e1504215536519a86014.jpg" width="1" height="1" ></li>
+                                         <li id="6609106" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f1504215536519a86014.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e1504215536519a86014.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e1504215536519a86014.jpg" width="1" height="1" ></li>
 
-                <li id="6609091" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f150421553651365c0b1.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553651365c0b1.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553651365c0b1.jpg" width="1" height="1" ></li>
+                                         <li id="6609091" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f150421553651365c0b1.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553651365c0b1.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e150421553651365c0b1.jpg" width="1" height="1" ></li>
 
-                <li id="6608897" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364d9135e58.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364d9135e58.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364d9135e58.jpg" width="1" height="1" ></li>
+                                         <li id="6608897" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364d9135e58.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364d9135e58.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364d9135e58.jpg" width="1" height="1" ></li>
 
-                <li id="6608843" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364b8bbb692.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364b8bbb692.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364b8bbb692.jpg" width="1" height="1" ></li>
+                                         <li id="6608843" class="ui-state-default thumb" fileurl="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/f15042155364b8bbb692.jpg" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url(http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364b8bbb692.jpg);"><img src="images/spacer.gif" width="100%" ></div><img src="http://youvividcnupload1.oss.aliyuncs.com/images/2015/17/e15042155364b8bbb692.jpg" width="1" height="1" ></li>
 
-              </ul>
+                                     </ul>
                                      	         	           	  
                   	           </div>
                   	       </div>
@@ -258,9 +258,26 @@
                                  
                                  $("#tabs").bind('tabsselect', function(event, ui) {
                                  	
+                                 	
+                                 	  //$("#accordion_header").accordion("activate", false );
                                  	  var invite_detail_id = ui.tab.id.substr(19, ui.tab.id.length - 19 );
+                                 	  var tabSelected = ui.index;
+                                 	  
+                                 	  
+		                                var accordionActive = $('#iframepage').get(0).contentWindow.$("#accordion").accordion( "option", "active" );
                                  	  console.log(invite_detail_id);
-                                 
+                                	  if (accordionActive===false){
+			                                    accordionActive = -1;		                                
+			                              }
+		                                
+		                                if (tabSelected != accordionActive) {
+			
+			                                 if($.browser.msie && parseInt($.browser.version, 10) <= 8) {
+				                               // delay for open accordion because ie7 ie8 will hang
+				                                  setTimeout(function() {$('#iframepage').get(0).contentWindow.$("#accordion").accordion("activate",tabSelected);},1250);//			                                 } else {
+    			                                  $('#iframepage').get(0).contentWindow.$("#accordion").accordion("activate",tabSelected);
+			                                 }
+                                    }
                                  });                            
                            
 		                           });

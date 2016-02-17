@@ -40,7 +40,7 @@
                     	        </div>
                                 <![endif]-->
                                 
-                                <!--<iframe  id="iframepage" name="iframepage" allowtransparency="true" scrolling="auto" style=" margin-top:77px; margin-left:8px; height: 495px; width: 337px;  position: absolute" src="srccode.html"  frameborder="0" marginwidth="0"  ></iframe>-->
+                                <iframe  id="iframepage" name="iframepage" allowtransparency="true" scrolling="auto" style=" margin-top:77px; margin-left:8px; height: 495px; width: 337px;  position: absolute" src="srccode.html"  frameborder="0" marginwidth="0"  ></iframe>
                                 
                         </div>              
                         <br>
@@ -258,9 +258,27 @@
                                  
                                  $("#tabs").bind('tabsselect', function(event, ui) {
                                  	
+                                 	
+                                 	  //$("#accordion_header").accordion("activate", false );
                                  	  var invite_detail_id = ui.tab.id.substr(19, ui.tab.id.length - 19 );
+                                 	  var tabSelected = ui.index;
+                                 	  
+                                 	  
+		                                var accordionActive = $('#iframepage').get(0).contentWindow.$("#accordion").accordion( "option", "active" );
                                  	  console.log(invite_detail_id);
-                                 
+                                	  if (accordionActive===false){
+			                                    accordionActive = -1;		                                
+			                              }
+		                                
+		                                if (tabSelected != accordionActive) {
+			
+			                                 if($.browser.msie && parseInt($.browser.version, 10) <= 8) {
+				                               // delay for open accordion because ie7 ie8 will hang
+				                                  setTimeout(function() {$('#iframepage').get(0).contentWindow.$("#accordion").accordion("activate",tabSelected);},1250);
+				                               } else {
+    			                                  $('#iframepage').get(0).contentWindow.$("#accordion").accordion("activate",tabSelected);
+			                                 }
+                                    }
                                  });                            
                            
 		                           });
