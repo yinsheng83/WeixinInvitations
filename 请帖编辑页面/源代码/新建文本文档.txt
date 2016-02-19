@@ -1,0 +1,335 @@
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<title></title>
+<meta name="title" content="" />
+
+<meta name="keywords" content="" />
+<link href="movcard.css.asp?langid=2" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/jquery-ui-1.8.18.custom.full.css" type="text/css" media="screen" charset="utf-8">
+<style type='text/css'>
+<!--
+.tabs {
+	margin-top: 0.5em;
+}
+.ui-tabs-nav .ui-state-active {
+
+}
+
+.ui-tabs .ui-tabs-panel { 
+    background: transparent; 
+    border-width: 0px; 
+    padding-left:10px;
+    padding-right: 10px;
+}
+.ui-tabs-panel p {
+	margin-top: 0em;
+}
+
+#tabs-nohdr {
+	padding: 0px;
+	background: none;
+	border-width: 0px;
+}
+#tabs-nohdr .ui-tabs-nav {
+	padding-left: 0px;
+	background: transparent;
+	border-width: 0px 0px 1px 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+
+
+
+#tabs-nohdr .ui-tabs-panel {
+	border-width: 0px 1px 1px 1px;
+	background: #ffffff;
+}
+
+
+
+.ui-tabs { padding: 0px; padding-top: 10px; zoom: 1; border:1px;}
+.ui-tabs .ui-tabs-nav li {  background: #f2f2f2;}
+.ui-tabs .ui-tabs-nav li a{ font-size:13px; color:#858585; padding-left: 6px;  padding-right: 6px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { background-color:#ffffff }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a{ color: #FD729C; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-active { background: #ffffff; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a{ color: #FD729C;  }
+
+
+//-->
+</style>
+
+
+<script type="text/javascript" src="js/jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.18.full.min.js"></script>
+
+<script type="text/javascript" src="firefox_xml_maxthon.js"></script>
+
+
+
+<script language="JavaScript" type="text/JavaScript">
+<!--
+  
+
+  String.prototype.ReplaceAll = function( AFindText, ARepText){
+    
+    raRegExp = new RegExp(AFindText,"g");
+    
+    return this.replace(raRegExp,ARepText)
+    
+  } 
+  
+  
+  
+
+
+-->
+</script>
+
+
+<script type="text/javascript">
+<!--
+
+
+
+
+
+$(document).ready(function(){
+	$("#fetch_button").bind('click', function (e) {
+
+			var imgurl = document.xform.imgurl.value;    
+			
+			if( imgurl != ''){
+				document.getElementById('_upload').innerHTML = '<img align="absmiddle" width="15" height="15" src="images/loader.gif" />';
+				
+				//var url = 'upload_image_url_1205.asp?usrid=316821&sid=35089746&imgurl=' + escape( imgurl) + '&rnd=' + Math.random();
+        
+       
+        var url = 'http://42.121.32.43/ec2/upload_oss_image_url.php?usrid=316821&sid=35089746&realpath=youvividcnupload1&imgurl=' + escape( imgurl) + '&rnd=' + Math.random();
+      	
+
+				var contentType ="application/x-www-form-urlencoded; charset=utf-8";
+			 
+				if(window.XDomainRequest)
+					contentType = "text/plain";
+
+        	
+
+
+				$.ajax({
+				type: "POST",
+				url: "http://42.121.32.43/ec2/upload_oss_image_url.php",
+			    crossDomain: true,
+				//data: { folder: "invite_wimage",id: fileNamePart,from: fromUrl,cropdata: cdata},
+				data:"usrid=316821&sid=35089746&realpath=youvividcnupload1&imgurl=" + escape( imgurl) + "&rnd=" + Math.random(),
+				contentType: contentType,
+				//dataType: "json",
+				success: function(data) {
+					//alert('success:' + data);
+					if( data  == '0'){
+					
+						document.getElementById('_upload').innerHTML = '<span style="color:#ff0000;">不是jpg的URL！</span>';
+					
+					}else{
+					
+						if( data == 'image/jpg' ||  data == 'image/jpeg' ){
+						
+					 
+							document.getElementById('_upload').innerHTML = '下载完成！';
+							document.xform.imgurl.value = 'http://';
+							document.getElementById('_fm').src = 'filemanager_invite_header.asp?datatype=image&uploaded=1&rnd='+Math.random();
+							//document.getElementById('_filemanager').tabber.tabShow(0);
+							$( "#tabs-nohdr" ).tabs( "select", 0 );				 
+						
+						}else{
+						  
+							document.getElementById('_upload').innerHTML = '<span style="color:#ff0000;">下载失败！</span>';
+				 
+	
+						
+						}
+		
+					} 
+						
+				},
+				error: function(data) {
+					//alert('error:' +  data);
+					document.getElementById('_upload').innerHTML = '<span style="color:#ff0000;">下载失败！</span>';
+				}
+				
+		 
+				});         
+
+
+
+			
+			}
+	
+			else{
+				
+				document.getElementById('_upload').innerHTML = '<span style="color:#ff0000;">请输入图片链接！</span>';
+							
+			}
+	});
+});  
+
+
+
+
+
+
+
+
+
+
+
+  function addUserData( datatype, dataid, title, thumbnailurl, fileurl, fileid, rate){
+    
+	//alert('addUSerData:' + datatype);
+     
+     var txt, url, file;
+     var color, scale, xoffset, yoffset;
+          
+     var obj;
+
+     if( datatype == 'image'){
+         
+		$('#iframepage', parent.document.body).contents().find('#nopicture2270340').html("");
+		$('#nopicture2270340', parent.document.body).html("");
+		
+		$("#sortable2270340", parent.document.body).append('<li id="'+fileid+'" fileurl="' + fileurl + '" class="ui-state-default thumb" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url('+thumbnailurl+');"><img src="images/spacer.gif" width="100%" ></div><img src="' + thumbnailurl + '" width="1" height="1" ></li>');
+		$("#iframepage", parent.document.body).contents().find('#Gallery2270340').append('<li><a href="' + fileurl + '"><div class="thumb" style="background-image: url(' + thumbnailurl + ');"><img src="images/spacer.gif" width="100%" ></div></a></li>');
+     }else if( datatype == 'gallery_image'){
+         
+		/**/
+		//add photo into gallery if empty
+		//alert($('ul#sortable2270340 li', parent.document.body).length);
+		//if ($('ul#sortable2270340 li', parent.document.body).length == 0) {
+			$('#iframepage', parent.document.body).contents().find('#nopicture2270340').html("");
+			$('#nopicture2270340', parent.document.body).html("");
+			
+			$("#sortable2270340", parent.document.body).append('<li id="'+fileid+'" fileurl="' + fileurl + '" class="ui-state-default thumb" style="text-align: right"><span><img src="./images/close_button.png"></span><div class="thumbimage" style="background-image: url('+thumbnailurl+');"><img src="images/spacer.gif" width="100%" ></div><img src="' + thumbnailurl + '" width="1" height="1" ></li>');
+			$("#iframepage", parent.document.body).contents().find('#Gallery2270340').append('<li><a href="' + fileurl + '"><div class="thumb" style="background-image: url(' + thumbnailurl + ');"><img src="images/spacer.gif" width="100%" ></div></a></li>');
+		parent.syncGallery2270340();	
+		//}
+		
+
+		/**/
+		
+      	//self.parent.$dialog_photo.dialog('close');
+		//alert("请帖即将自动生成!\n页面左侧可实时预览效果,右侧可进行细部编辑\n\n有任何问题请连系右下角线上客服");
+     }  
+  }
+
+
+-->
+</script>
+
+
+
+
+<script>
+
+$(function() {
+    $( "#tabs-nohdr" ).tabs({
+        select: function(event, ui){
+            var tabNumber = ui.index;
+			
+			//alert("tabNumber=" + tabNumber);  
+			
+			if (tabNumber == 1) {
+				//alert(document.getElementById('_fu').src);
+				if ( document.getElementById('_fu').src == "")  
+					document.getElementById('_fu').src = 'fileupload_invite_header_plu_s3oss.asp?objid='+ document.iform.objid.value + '&datatype=' + document.iform.datatype.value + '&rnd='+Math.random();
+			}
+		}	
+    });
+});
+</script>
+
+
+</head>
+
+<body>
+
+<center>
+
+<table width="500" cellpadding="0" cellspacing="0" border="0">
+ <tr><td width="100%" height="20" align="left" valign="top" bgcolor="#FFFFFF">
+
+      <span id="tdimage0"></span>
+      
+      <form name="iform">        
+        
+        <input type="hidden" name="datatype" value="image">
+        <input type="hidden" name="dataid" value="image0">
+        
+        <input type="hidden" name="image0title" value="">
+        <input type="hidden" name="image0file" value="">
+        <input type="hidden" name="image0url" value="">
+        
+        <input type="hidden" name="objid" value="0">
+        <input type="hidden" name="filemanager_count" value="0">
+        <input type="hidden" name="xmldata" value="">
+
+      </form>
+      
+      
+<div id="tabs-nohdr"  class="tabs">
+    <ul>
+        <li><a href="#tabs-1">我的相片</a></li>
+        <li><a href="#tabs-2">上传</a></li>
+        <li><a href="#tabs-3">图片网址</a></li>
+
+        <li><a href="#tabs-5">系统图片库</a></li>
+    </ul>
+    <div align="center" id="tabs-1">
+        <table width="496" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+            	<td width="100%" height="440" align="left" valign="top" bgcolor="#FFFFFF">
+                    <span id="_select"></span>
+                    <iframe name="_fm" id="_fm" width="490" height="425" src="filemanager_invite_header.asp?datatype=image&rnd='+Math.random()" frameborder="0" bgcolor="#FFFFFF" ></iframe>
+                </td>
+			</tr>
+        </table>
+    </div>
+    <div id="tabs-2">
+        <table width="496" cellpadding="0" cellspacing="0" border="0">
+            <tr><td width="100%" height="440" align="center" valign="top" bgcolor="#FFFFFF"><iframe name="_fu" id="_fu" height="425" width="490" frameborder="0" bgcolor="#FFFFFF" ></iframe></td></tr>
+        </table>
+    </div>
+    <div id="tabs-3">
+        <table width="496" cellpadding="0" cellspacing="0" border="0"><form name="xform" method="post" >
+            <tr><td width="100%" height="440" align="left" valign="top" bgcolor="#FFFFFF">
+            	<br>
+                <input type="text" name="imgurl" value="http://" size="40">&nbsp;<input type="button" name="btn" id="fetch_button" value="抓图" >&nbsp;<span id="_upload"></span><br>
+                <span class="style2">(例如： http://l.yimg.com/g/images/home_photo_jam343.jpg)<br>说明：如何取得图片网址？在一张图片上按滑鼠右键，选择内容(或属性)后复制图片网址即可。某些网站禁止图片外连，因此可能无法透过图片网址抓图
+                </span>              
+            </td></tr></form>
+        </table>      			
+    </div>
+
+    <div id="tabs-5">
+        <table width="496" cellpadding="0" cellspacing="0" border="0">
+            <tr><td width="100%" height="440" align="left" valign="top" bgcolor="#FFFFFF">
+            <span id="_select_system"></span>
+            <iframe name="_fm_system" id="_fm_system" width="490" height="425" src="filemanager_invite_header_system.asp?datatype=image&rnd='+Math.random()" frameborder="0" bgcolor="#FFFFFF"  ></iframe></td></tr>
+        </table>
+    </div>
+</div>
+      
+ </td></tr>
+</table>
+
+</center>
+
+
+</body>
+</html>
